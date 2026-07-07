@@ -208,7 +208,7 @@ a:hover {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(165deg, #0c3260 0%, var(--navy) 55%, #174a82 100%);
+  background: url('images/bg.png') center center / cover no-repeat;
   z-index: 0;
 }
 
@@ -216,35 +216,29 @@ a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    radial-gradient(ellipse 90% 70% at 20% 85%, rgba(245, 197, 24, 0.14) 0%, transparent 60%),
-    radial-gradient(ellipse 75% 55% at 80% 20%, rgba(79, 195, 247, 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 45% at 50% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
 }
 
 .hero-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    transparent 35%,
-    rgba(7, 45, 92, 0.25) 100%
-  );
+  display: none;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: var(--white);
+  color: var(--navy);
 }
 
 .hero-logo {
   width: min(400px, 85vw);
   margin: 0 auto 1.5rem;
-  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 6px 20px rgba(10, 61, 122, 0.2));
 }
 
 .hero-org {
@@ -252,7 +246,7 @@ a:hover {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 0.85rem;
-  opacity: 0.85;
+  color: var(--navy-light);
   margin-bottom: 0.75rem;
 }
 
@@ -261,13 +255,14 @@ a:hover {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.25rem;
+  color: var(--navy-dark);
 }
 
 .hero-tagline {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   max-width: 640px;
   margin: 0 auto 2rem;
-  opacity: 0.9;
+  color: var(--gray-800);
   line-height: 1.7;
 }
 
@@ -279,13 +274,23 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.hero-actions .btn-secondary {
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+.hero-actions .btn-secondary:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
 .hero-goal {
   font-size: 1.1rem;
-  opacity: 0.85;
+  color: var(--navy);
 }
 
 .hero-goal strong {
-  color: var(--yellow);
+  color: var(--red);
   font-size: 1.3rem;
 }
 
