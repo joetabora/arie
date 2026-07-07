@@ -208,7 +208,11 @@ a:hover {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('images/bg2.png') center center / cover no-repeat;
+  background-color: #e3f2fa;
+  background-image: url('images/bg2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: 0;
 }
 
