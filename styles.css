@@ -208,7 +208,7 @@ a:hover {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('images/bg.png') center center / cover no-repeat;
+  background: url('images/bg2.png') center center / cover no-repeat;
   z-index: 0;
 }
 
