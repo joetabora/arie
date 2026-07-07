@@ -239,7 +239,7 @@ a:hover {
 }
 
 .hero-logo {
-  width: min(280px, 70vw);
+  width: min(400px, 85vw);
   margin: 0 auto 1.5rem;
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
 }
